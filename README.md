@@ -150,7 +150,7 @@ for inf in dados:
 ```
 
 ### Transformando o vetor em tabela
-Abaixo o vetor é separado em colunas, a cada itens no vetor, é realizado uma quebra de linha para gerar assim uma tabela com 5 colunas.
+Após a limpeza o vetor é separado em colunas, a cada itens no vetor, é realizado uma quebra de linha para gerar assim uma tabela com 5 colunas.
 
 
 ```python
@@ -176,7 +176,7 @@ for linha in matriz:
 
 
 ##  Gerando Dataframe
-Aqui é gerado o dataframe, especificando os nomes de cada coluna e então é exportado para um arquivo .excel e .csv
+E por fim a criação do dataframe, especificando os nomes de cada coluna e então é exportado para um arquivo .excel e .csv
 
 
 ```python
