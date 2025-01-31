@@ -118,13 +118,15 @@ for i, arquivo_pdf in enumerate(arquivos_pdf):
             print(f"Erro inesperado: {e}")
 
 ```
+
 ### Saida dos dados extraidos
+
 O vetor contem todos os dados extraidos de forma sequencial.
 
 ['2018','101-164525-1.pdf','Tipo Anemômetro de pás', 'Modelo LCA6000 VT', 'Número de patrimônio Não consta', 'Número de série 102844', 'Número de identificação AA16',...]
 
 
-
+E abaixo é realizada a limpeza de strings desnecessárias.
 
 ```python
 lixo = ["do copo" , "do corpo",]
