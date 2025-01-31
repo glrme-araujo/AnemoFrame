@@ -46,6 +46,12 @@ certificado = [os.path.splitext(f)[0] for f in os.listdir(diretorio) if os.path.
 
 Aqui extraimos todos os dados seguindo e filtramos as informações pelas palavras chave (Modelo, Tipo,Número de série)
 
+
+<div aling="center">
+<img src = "(https://github.com/user-attachments/assets/27ee03de-f08a-4fe8-8fa4-a4c453bb7a1e"
+</div>
+  
+
 A partir disso limpamos os textos e caracteres desnecessários e criamos um vetor com os dados.
 
 O vetor armazenará:
@@ -112,6 +118,12 @@ for i, arquivo_pdf in enumerate(arquivos_pdf):
             print(f"Erro inesperado: {e}")
 
 ```
+### Saida dos dados extraidos
+O vetor contem todos os dados extraidos de forma sequencial.
+
+['2018','101-164525-1.pdf','Tipo Anemômetro de pás', 'Modelo LCA6000 VT', 'Número de patrimônio Não consta', 'Número de série 102844', 'Número de identificação AA16',...]
+
+
 
 
 ```python
@@ -135,6 +147,9 @@ for inf in dados:
     
 ```
 
+### Transformando o vetor em tabela
+Abaixo o vetor é separado em colunas, a cada itens no vetor, é realizado uma quebra de linha para gerar assim uma tabela com 5 colunas.
+
 
 ```python
 
@@ -147,6 +162,12 @@ for linha in matriz:
 
     print(linha)
 ```
+['2019', '101-163257-1.pdf', '  Anemômetro de copos', '  WS200-UMB', '  001.0509.0811.010']
+['2019', '101-163258-1.pdf', '  Anemômetro Ultrassônico', '  WS200-UMB', '  001.0509.0811.010']
+['2018', '101-164525-1.pdf', '  Anemômetro de pás', '  LCA6000 VT', '  102844']
+['2018', '101-165606-1.pdf', '  Anemômetro de pás', '   480 / 153', '  02394348 / 60349153']
+['2018', '101-165710-1.pdf', '  Anemômetro de pás', '  AD-250', '  Q696136']
+
 
 ##  Gerando Dataframe
 Aqui é gerado o dataframe, especificando os nomes de cada coluna e então é exportado para um arquivo .excel e .csv
