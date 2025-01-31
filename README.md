@@ -48,7 +48,7 @@ Aqui extraimos todos os dados seguindo e filtramos as informações pelas palavr
 
 
 <div aling="center">
-<img src = "(https://github.com/user-attachments/assets/27ee03de-f08a-4fe8-8fa4-a4c453bb7a1e"
+<img src = "https://github.com/user-attachments/assets/27ee03de-f08a-4fe8-8fa4-a4c453bb7a1e"
 </div>
   
 
@@ -163,9 +163,13 @@ for linha in matriz:
     print(linha)
 ```
 ['2019', '101-163257-1.pdf', '  Anemômetro de copos', '  WS200-UMB', '  001.0509.0811.010']
+
 ['2019', '101-163258-1.pdf', '  Anemômetro Ultrassônico', '  WS200-UMB', '  001.0509.0811.010']
+
 ['2018', '101-164525-1.pdf', '  Anemômetro de pás', '  LCA6000 VT', '  102844']
+
 ['2018', '101-165606-1.pdf', '  Anemômetro de pás', '   480 / 153', '  02394348 / 60349153']
+
 ['2018', '101-165710-1.pdf', '  Anemômetro de pás', '  AD-250', '  Q696136']
 
 
